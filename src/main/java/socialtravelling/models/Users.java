@@ -20,23 +20,23 @@ public class Users  implements Serializable {
     private String name;
 
     @Column(name = "lastname")
-    @NotNull(message = "O campo nome não pode ser nulo")
+    @NotNull(message = "O campo ultimo nome não pode ser nulo")
     private String lastname;
 
     @Column(name = "email")
-    @NotNull(message = "O campo nome não pode ser nulo")
+    @NotNull(message = "O campo email não pode ser nulo")
     private String email;
 
     @Column(name = "password")
-    @NotNull(message = "O campo nome não pode ser nulo")
+    @NotNull(message = "O campo senha não pode ser nulo")
     private String password;
 
     @Column(name = "myphoto")
-    @NotNull(message = "O campo nome não pode ser nulo")
+    @NotNull(message = "O campo foto não pode ser nulo")
     private String myphoto;
 
     @JoinColumn(name= "usertype_id")
-    @NotNull(message = "O campo nome não pode ser nulo")
+    @NotNull
     @ManyToOne
     private Usertypes usertype;
 

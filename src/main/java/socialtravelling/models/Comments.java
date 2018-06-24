@@ -16,23 +16,23 @@ public class Comments implements Serializable {
     private long id;
 
     @Column(name = "photo")
-    @NotNull(message = "O campo nome não pode ser nulo")
+    @NotNull(message = "O campo foto não pode ser nulo")
     private String photo;
 
     @Column(name = "description")
-    @NotNull(message = "O campo nome não pode ser nulo")
+    @NotNull(message = "O campo descrição não pode ser nulo")
     private String description;
 
     @Column(name = "country")
-    @NotNull(message = "O campo nome não pode ser nulo")
+    @NotNull(message = "O campo país não pode ser nulo")
     private String country;
 
     @Column(name = "city")
-    @NotNull(message = "O campo nome não pode ser nulo")
+    @NotNull(message = "O campo cidade não pode ser nulo")
     private String city;
 
     @JoinColumn(name= "user_id")
-    @NotNull(message = "O campo nome não pode ser nulo")
+    @NotNull
     @ManyToOne
 
     private Users user;
