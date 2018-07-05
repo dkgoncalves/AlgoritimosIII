@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/usertype")
+@CrossOrigin(origins = {"http://127.0.0.1:8000"})
 public class UsertypeController {
 
     @Autowired

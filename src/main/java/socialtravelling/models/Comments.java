@@ -15,21 +15,9 @@ public class Comments implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "photo")
-    @NotNull(message = "O campo foto não pode ser nulo")
-    private String photo;
-
     @Column(name = "description")
     @NotNull(message = "O campo descrição não pode ser nulo")
     private String description;
-
-    @Column(name = "country")
-    @NotNull(message = "O campo país não pode ser nulo")
-    private String country;
-
-    @Column(name = "city")
-    @NotNull(message = "O campo cidade não pode ser nulo")
-    private String city;
 
     @JoinColumn(name= "user_id")
     @NotNull
@@ -37,20 +25,17 @@ public class Comments implements Serializable {
 
     private Users user;
 
+    @JoinColumn(name= "post_id")
+    @NotNull
+    @ManyToOne
+    private Posts posts;
+
     public long getId() {
         return id;
     }
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public String getPhoto() {
-        return photo;
-    }
-
-    public void setPhoto(String photo) {
-        this.photo = photo;
     }
 
     public String getDescription() {
@@ -61,27 +46,19 @@ public class Comments implements Serializable {
         this.description = description;
     }
 
-    public String getCountry() {
-        return country;
-    }
-
-    public void setCountry(String country) {
-        this.country = country;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
     public Users getUser() {
         return user;
     }
 
     public void setUser(Users user) {
         this.user = user;
+    }
+
+    public Posts getPosts() {
+        return posts;
+    }
+
+    public void setPosts(Posts posts) {
+        this.posts = posts;
     }
 }
