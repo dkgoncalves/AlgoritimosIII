@@ -24,4 +24,9 @@ public class CommentController {
     public List<Comments> buscarTodos(){
         return cr.findAll();
     }
+
+    @DeleteMapping("/{id}")
+    public void excluir(@PathVariable("id") Integer id) {
+                cr.deleteById(id);
+    }
 }

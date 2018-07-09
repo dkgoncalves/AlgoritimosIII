@@ -13,7 +13,7 @@ import java.util.Set;
 public class Users  implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
     @Column(name = "name")
     @NotNull(message = "O campo nome não pode ser nulo")
@@ -44,7 +44,7 @@ public class Users  implements Serializable {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

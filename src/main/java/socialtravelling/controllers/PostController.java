@@ -25,4 +25,10 @@ public class PostController {
         return pr.findAll();
     }
 
+
+    @DeleteMapping("/{id}")
+    public void excluir(@PathVariable("id") Integer id) {
+        pr.deleteById(id);
+    }
+
 }

@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cd027b2-bb60-45ca-b37c-db7c21863da1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socialtravelling/models/Posts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socialtravelling/repository/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V004__Create_Table_Comments.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/UsertypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/UsertypeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/PostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/socialtravelling/models/Comments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/socialtravelling/models/Comments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V003__Create_Table_Comments.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V003__Create_Table_Posts.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db/migration/V003__Create_Table_Comments.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/socialtravelling/controllers/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/socialtravelling/controllers/CommentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/socialtravelling/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/socialtravelling/controllers/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/socialtravelling/controllers/UsertypeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/socialtravelling/controllers/UsertypeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/socialtravelling/models/Comments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/socialtravelling/models/Comments.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/socialtravelling/models/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/socialtravelling/models/Users.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/socialtravelling/models/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/socialtravelling/models/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/socialtravelling/models/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/socialtravelling/models/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V002__Create_Table_User.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V002__Create_Table_User.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V003__Create_Table_Posts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V003__Create_Table_Posts.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V004__Create_Table_Comments.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V004__Create_Table_Comments.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,13 +21,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PostController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PostController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/controllers/PostController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="250">
+              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/controllers/CommentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+              <folding>
+                <element signature="e#747#748#0" expanded="true" />
+                <element signature="e#788#789#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,8 +49,8 @@
       <file leaf-file-name="Posts.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/models/Posts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            <state relative-caret-position="15">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#751#752#0" expanded="true" />
@@ -76,6 +82,71 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Comments.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/models/Comments.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+              <folding>
+                <element signature="e#1164#1165#0" expanded="true" />
+                <element signature="e#1192#1193#0" expanded="true" />
+                <element signature="e#1233#1234#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Users.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/models/Users.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="V001__Create_Table_Usertypes.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V001__Create_Table_Usertypes.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="V002__Create_Table_User.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V002__Create_Table_User.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="V003__Create_Table_Posts.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V003__Create_Table_Posts.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="V004__Create_Table_Comments.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V004__Create_Table_Comments.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Usertypes.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/models/Usertypes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -96,13 +167,16 @@
         <option value="$PROJECT_DIR$/src/main/java/socialtravelling/repository/PostRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V004_Create_Table_Posts.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/db/migration/V003__Create_Table_Comments.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/socialtravelling/models/Comments.java" />
-        <option value="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/PostController.java" />
         <option value="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/CommentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/UsertypeController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V004__Create_Table_Comments.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/PostController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/socialtravelling/controllers/CommentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/socialtravelling/models/Posts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/socialtravelling/models/Comments.java" />
+        <option value="$PROJECT_DIR$/src/main/java/socialtravelling/models/Users.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V002__Create_Table_User.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V004__Create_Table_Comments.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/migration/V003__Create_Table_Posts.sql" />
       </list>
     </option>
   </component>
@@ -312,10 +386,10 @@
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43057722" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45397815" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2876494" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2876494" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -337,28 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/models/Comments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-          <folding>
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1233#1234#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V001__Create_Table_Usertypes.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V002__Create_Table_User.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -373,41 +425,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/controllers/CommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V004__Create_Table_Comments.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/models/Users.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/models/Usertypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V003__Create_Table_Posts.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/repository/PostRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -418,10 +435,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/controllers/PostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/controllers/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+          <folding>
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/models/Usertypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/models/Posts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="15">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#751#752#0" expanded="true" />
@@ -452,13 +497,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/controllers/PostController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/models/Comments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+          <folding>
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/socialtravelling/models/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V001__Create_Table_Usertypes.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V004__Create_Table_Comments.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V003__Create_Table_Posts.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/migration/V002__Create_Table_User.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
         </state>
       </provider>
     </entry>

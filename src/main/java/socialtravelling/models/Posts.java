@@ -11,7 +11,7 @@ public class Posts implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private int id;
 
     @Column(name = "description")
     @NotNull(message = "O campo description não pode ser nulo")
@@ -38,7 +38,7 @@ public class Posts implements Serializable {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
