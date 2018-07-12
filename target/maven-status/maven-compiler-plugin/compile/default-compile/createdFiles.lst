@@ -1,0 +1,13 @@
+socialtravelling/controllers/UsertypeController.class
+socialtravelling/controllers/CommentController.class
+socialtravelling/repository/UserRepository.class
+socialtravelling/SocialtravellingApplication.class
+socialtravelling/controllers/PostController.class
+socialtravelling/repository/CommentRepository.class
+socialtravelling/models/Comments.class
+socialtravelling/models/Users.class
+socialtravelling/repository/PostRepository.class
+socialtravelling/models/Posts.class
+socialtravelling/repository/UsertypeRepository.class
+socialtravelling/models/Usertypes.class
+socialtravelling/controllers/UserController.class

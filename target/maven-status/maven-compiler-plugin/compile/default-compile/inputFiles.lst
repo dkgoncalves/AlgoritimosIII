@@ -1,0 +1,13 @@
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/SocialtravellingApplication.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/models/Users.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/models/Comments.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/repository/UsertypeRepository.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/repository/UserRepository.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/controllers/UserController.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/models/Posts.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/repository/PostRepository.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/controllers/CommentController.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/models/Usertypes.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/controllers/UsertypeController.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/controllers/PostController.java
+/home/derik/Área de Trabalho/git/Socialtravelling/AlgoritimosIII/src/main/java/socialtravelling/repository/CommentRepository.java
