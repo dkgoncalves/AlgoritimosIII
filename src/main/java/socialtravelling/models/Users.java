@@ -40,7 +40,7 @@ public class Users  implements Serializable {
     @ManyToOne
     private Usertypes usertype;
 
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 

@@ -30,7 +30,7 @@ public class Comments implements Serializable {
     @ManyToOne
     private Posts posts;
 
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 

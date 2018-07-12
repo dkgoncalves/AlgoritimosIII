@@ -26,9 +26,9 @@ public class PostController {
     }
 
 
-    @DeleteMapping("/{id}")
-    public void excluir(@PathVariable("id") Integer id) {
-        pr.deleteById(id);
-    }
+//    @DeleteMapping("/{id}")
+//    public void excluir(@PathVariable("id") Integer id) {
+//        pr.deleteById(id);
+//    }
 
 }

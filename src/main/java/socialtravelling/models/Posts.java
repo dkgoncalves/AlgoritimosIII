@@ -34,7 +34,7 @@ public class Posts implements Serializable {
     @ManyToOne
     private Users user;
 
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
