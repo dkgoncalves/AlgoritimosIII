@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>SocialTravelling</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+    <link rel="stylesheet" href="structure.css">
+    <link rel="stylesheet" href="posts.css">
+  </head>
+  <body>
+    <section class="base">
+      <div id="app">
+        <form>
+          <div class="create-posts">
+            <select class="select-users" v-model="post.user">
+              <option value="" disabled selected>Usuários</option>
+              <option v-for="u in users" v-bind:value="u">{{ u.name }}</option>
+            </select>
+            <div class="post-params">
+              <input type="text" v-model="post.country" placeholder="País">
+              <input type="text" v-model="post.city" placeholder="Cidade">
+              <input type="text" v-model="post.photo" placeholder="Foto">
+            </div>
+            <div class="insert-posts">
+              <textarea rows="8" cols="80" v-model="post.description" placeholder="Descreva sua viagem"></textarea>
+              <button class="btn-posts" type="button" v-on:click="newpost">Postar</button>
+            </div>
+        </form>
+      </div>
+
+        <div v-for="post in posts">
+          <div class="post">
+            <div class="post-style">
+              <div class="post-image">
+                <div class="title-country">
+                  <h4>{{ post.country }}, </h4>
+                  <span>{{ post.city }}</span>
+                </div>
+                <img src="images/backimage2.png" alt="teste">
+              </div>
+              <div class="post-description">
+                <div class="informations">
+                  <img class="photo-user" src="images/backimage2.png" alt="teste">
+                  <h4 class="user-names"> {{ post.user.name }} {{ post.user.lastname }} </h4>
+                </div>
+                <hr class="divisor-post-desc">
+                <div class="description-tag">
+                  <p>{{ post.description }}</p>
+                </div>
+              </div>
+            </div>
+            <hr class="divisor-post-comments">
+            <div class="post-comments" v-for="comment in comments">
+              <div class="user-comments">
+                <img class="photo-user" src="images/backimage2.png" alt="teste">
+                <h4 class="user-names"> {{ comment.user.name }} {{ comment.user.lastname }} </h4>
+              </div>
+              <p>{{ comment.description }}</p>
+              <button class="btn-destroy" v-on:click="destroycomment(comment)" type="button">Excluir</button>
+              <button class="btn-edit" id="1" type="button">Editar</button>
+            </div>
+            <form class="form-comments">
+              <div class="insert-comments" style="">
+                <select class="btn-comments" v-model="comment.user">
+                  <option value="" disabled selected>Usuários</option>
+                  <option v-for="u in users" v-bind:value="u">{{ u.name }}</option>
+                </select>
+                <select class="btn-comments" v-model="comment.posts">
+                  <option v-for="p in posts" v-bind:value="p" selected>{{ p.id }}</option>
+                </select>
+                <textarea name="name" rows="8" cols="80" placeholder="Insira seu comentário" v-model="comment.description"></textarea>
+                <button class="btn-comments" type="button" v-on:click="newcomment">Comentar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    </section>
+  </body>
+  <script>
+    var app = new Vue({
+      el:"#app",
+      data:{
+        users:[],
+        user: {id:'', name:'', lastname: ''},
+        posts: [],
+        post: {id:'', country:'', city:'', photo:'', description:'', user:{name:''}},
+        comments: [],
+        comment: {id:'', description:'', posts:{id:''}, user:{name:'', lastname:'', id:''}}
+      },
+      created:function(){
+        this.$http.get('http://localhost:8080/posts').then(response => {
+          this.posts = response.body;
+        },
+        response => {
+          console.log("Não Funcionou");
+        });
+        this.$http.get('http://localhost:8080/comments').then(response => {
+          this.comments = response.body;
+        },
+        response => {
+          console.log("Não Funcionou");
+        });
+        this.$http.get('http://localhost:8080/users').then(response => {
+          this.users = response.body;
+        },
+        response => {
+          console.log("Não Funcionou");
+        });
+      },
+      methods:{
+        newcomment:function(){
+          this.$http.post('http://localhost:8080/comments', this.comment).then(response => {
+            this.comments.push(response.body);
+            this.comment = {description:'', posts:{id:''}, user:{name:''} }
+          },
+          response => {
+            console.log("Não funcionou");
+          });
+        },
+        newpost:function(){
+          this.$http.post('http://localhost:8080/posts', this.post).then(response => {
+            this.posts.push(response.body);
+          },
+          response => {
+            console.log("Não funcionou");
+          });
+        },
+        destroycomment:function(usuarioExcluir){
+            this.$http.delete('http://localhost:8080/comments/'+usuarioExcluir.id).then(response => {
+            //procurar qual o vetor nosso objeto se encontra
+            index = this.comments.indexOf(usuarioExcluir);
+            //remover objeto do vetor
+            this.comments.splice(index, 1);
+          },
+          response => {
+            console.log("Não funcionou");
+          });
+        }
+      }
+    });
+  </script>
+</html>
