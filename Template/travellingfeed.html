@@ -72,6 +72,7 @@
                 </select>
                 <textarea name="name" rows="8" cols="80" placeholder="Insira seu comentário" v-model="comment.description"></textarea>
                 <button class="btn-comments" type="button" v-on:click="newcomment">Comentar</button>
+                <button type="button" name="button" ><a href="http://localhost:8080/comments/pdfs">Gerar relatório</a></button>
               </div>
             </form>
           </div>
@@ -138,7 +139,7 @@
           response => {
             console.log("Não funcionou");
           });
-        }
+        },
       }
     });
   </script>
